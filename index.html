@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ademola Aina | Research and Software</title>
+<meta name="description" content="Ademola Aina: PhD researcher in Agricultural Process Engineering (hyperspectral and thermal imaging, machine learning) and full-stack software developer.">
+<style>
+  :root{
+    --bg:#f7f5f0; --ink:#1d2421; --muted:#5b6560; --line:#dcd7cc;
+    --accent:#2f6b4f; --accent-soft:#e3eee7; --card:#fffdf9;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141816; --ink:#e7ebe8; --muted:#9aa6a0; --line:#2b332f;
+      --accent:#7cc4a0; --accent-soft:#1f2c26; --card:#1a1f1c; }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:17px/1.6 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+  .sans{font-family:"Inter","Segoe UI",system-ui,-apple-system,sans-serif}
+  a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+  .wrap{max-width:980px;margin:0 auto;padding:0 24px}
+  nav{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 88%,transparent);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+  nav .name{font-weight:600;letter-spacing:.02em}
+  nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;font-size:14px}
+  nav ul a{color:var(--muted);text-decoration:none}
+  nav ul a:hover{color:var(--ink)}
+  header{padding:88px 0 56px}
+  .eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+  h1{font-size:clamp(38px,6vw,60px);line-height:1.05;margin:0 0 20px;font-weight:600;letter-spacing:-.01em}
+  .lede{font-size:20px;color:var(--muted);max-width:680px;margin:0 0 28px}
+  .links{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;padding:9px 16px;border:1px solid var(--line);border-radius:999px;
+    text-decoration:none;color:var(--ink);font-size:14px;background:var(--card)}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 28px;font-weight:600}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .block h3{margin:0 0 6px;font-size:21px;font-weight:600}
+  .meta{font-size:13px;color:var(--muted);margin:0 0 10px}
+  .block p{margin:0}
+  .pubs{list-style:none;margin:0;padding:0;counter-reset:p}
+  .pubs li{padding:16px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:64px 1fr;gap:16px}
+  .pubs li:last-child{border-bottom:0}
+  .pubs .yr{font-size:14px;color:var(--muted);padding-top:3px}
+  .pubs .t{font-size:18px;margin:0 0 4px}
+  .pubs .j{font-size:14px;color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column}
+  .card h3{margin:0 0 4px;font-size:20px;font-weight:600}
+  .status{font-size:12px;color:var(--muted);margin:0 0 12px}
+  .card p{margin:0 0 14px;font-size:16px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin:auto 0 14px;padding-top:6px}
+  .tag{font-size:12px;padding:3px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+  .card .go{font-size:14px;display:flex;gap:14px}
+  .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+  .skills h3{font-size:15px;margin:0 0 8px;font-weight:600}
+  .skills p{margin:0;font-size:15px;color:var(--muted)}
+  .certs{list-style:none;padding:0;margin:0;columns:2;column-gap:28px;font-size:15px}
+  .certs li{break-inside:avoid;padding:6px 0}
+  .certs span{color:var(--muted)}
+  footer{padding:40px 0 64px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+  @media (max-width:720px){
+    nav ul{display:none}
+    .two{grid-template-columns:1fr}
+    .certs{columns:1}
+    .pubs li{grid-template-columns:1fr;gap:2px}
+  }
+</style>
+</head>
+<body>
+
+<nav class="sans"><div class="wrap">
+  <span class="name">Ademola Aina</span>
+  <ul>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<header><div class="wrap">
+  <p class="eyebrow sans">Research &middot; Machine learning &middot; Software</p>
+  <h1>Ademola Aina</h1>
+  <p class="lede">PhD researcher in Agricultural Process Engineering at Universiti Putra Malaysia, working on non-destructive fruit quality assessment with hyperspectral imaging, thermal imaging and machine learning. I also build full-stack web applications.</p>
+  <div class="links sans">
+    <a class="btn primary" href="#projects">See projects</a>
+    <a class="btn" href="https://www.linkedin.com/in/ademola-aina-m/">LinkedIn</a>
+    <a class="btn" href="https://github.com/ade-mic">GitHub</a>
+  </div>
+</div></header>
+
+<section id="research"><div class="wrap">
+  <h2 class="sans">Research</h2>
+  <div class="two">
+    <div class="block">
+      <h3>PhD, Agricultural Process Engineering</h3>
+      <p class="meta sans">Universiti Putra Malaysia &middot; Oct 2025 to present</p>
+      <p>Non-destructive detection of internal disorders in tropical fruit using hyperspectral imaging, thermal imaging and machine learning. Work includes Python and R pipelines for spectral preprocessing, feature selection, classification and model validation.</p>
+    </div>
+    <div class="block">
+      <h3>MSc, Agricultural Process Engineering</h3>
+      <p class="meta sans">Universiti Putra Malaysia &middot; 2021 to 2024</p>
+      <p>Finite element modelling of the mechanical behaviour of papaya fruit, with geometry from 3D laser scanning, to reduce mechanical damage during postharvest handling.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="publications"><div class="wrap">
+  <h2 class="sans">Publications</h2>
+  <ul class="pubs">
+    <li><span class="yr sans">2027</span><div>
+      <p class="t"><a href="https://doi.org/10.1016/j.jspr.2026.103295">Digital twins for postharvest horticultural systems: Coupling quality kinetics, heat and mass transfer with computational intelligence</a></p>
+      <p class="j sans">Aina, A.M., Hashim, N., Guo, L., Onwude, D. Journal of Stored Products Research, 120, 103295.</p></div></li>
+    <li><span class="yr sans">2027</span><div>
+      <p class="t"><a href="https://doi.org/10.1016/j.foodcont.2026.112449">Advances in management and monitoring technologies for anthracnose in fruits, vegetables, legumes, and cereals</a></p>
+      <p class="j sans">Aina, A.M., Hashim, N. Food Control, 191, 112449.</p></div></li>
+    <li><span class="yr sans">2025</span><div>
+      <p class="t"><a href="https://doi.org/10.1016/j.postharvbio.2025.113565">Finite element modelling of the mechanical behavior of papaya fruit under compression</a></p>
+      <p class="j sans">Aina, A.M., Harith, H.H., Hashim, N., Mohamad Shukery, M.F. Postharvest Biology and Technology, 226, 113565.</p></div></li>
+    <li><span class="yr sans">2024</span><div>
+      <p class="t"><a href="https://doi.org/10.1111/jfpe.14627">The influence of papaya shape on its mass model and mechanical properties</a></p>
+      <p class="j sans">Aina, A.M., Harith, H., Hashim, N., Shukery, M.F.M. Journal of Food Process Engineering, 47(5).</p></div></li>
+  </ul>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2 class="sans">Software projects</h2>
+  <div class="grid">
+
+    <article class="card">
+      <h3>JustBooks</h3>
+      <p class="status sans">Live &middot; 2026</p>
+      <p>Marketplace for books, textbooks and academic journals. Publishers and institutions sell titles and receive sales and usage reports; independent authors self-publish and earn royalties. v2 is a monorepo with a Next.js storefront and reader, a NestJS API and a background worker that renders uploaded books.</p>
+      <div class="tags sans"><span class="tag">Next.js</span><span class="tag">NestJS</span><span class="tag">PostgreSQL</span><span class="tag">Drizzle</span><span class="tag">Firebase</span></div>
+      <div class="go sans"><a href="https://justbookspub.com">Visit site</a></div>
+    </article>
+
+    <article class="card">
+      <h3>myInterviewerAI</h3>
+      <p class="status sans">Team project &middot; 2025 &middot; offline</p>
+      <p>AI interview practice platform with text and real-time voice modes. Next.js frontend with WebSocket communication and Firebase authentication; Python backend for AI-assisted interview analysis; hosted on Azure with PostgreSQL. Reached about 20 users.</p>
+      <div class="tags sans"><span class="tag">Next.js</span><span class="tag">WebSockets</span><span class="tag">Python</span><span class="tag">OpenAI API</span><span class="tag">Azure</span></div>
+    </article>
+
+    <article class="card">
+      <h3>Dr Dhobi</h3>
+      <p class="status sans">Client project &middot; 2025</p>
+      <p>Progressive web app for a laundry service. Installable on mobile, with a 3-step booking flow, email confirmations, Discord notifications for staff and an admin dashboard for real-time booking management.</p>
+      <div class="tags sans"><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Firebase</span><span class="tag">PWA</span></div>
+      <div class="go sans"><a href="https://github.com/ade-mic/dr-dhobi">Source</a></div>
+    </article>
+
+    <article class="card">
+      <h3>CV Builder</h3>
+      <p class="status sans">2026</p>
+      <p>CV editor with Google Gemini used to refine content. ATS-friendly templates, PDF and Word export, Firebase authentication and cloud storage with auto-save.</p>
+      <div class="tags sans"><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Gemini API</span><span class="tag">Firebase</span></div>
+    </article>
+
+    <article class="card">
+      <h3>Heart Disease Prediction Service</h3>
+      <p class="status sans">2025</p>
+      <p>Machine learning web service that estimates heart disease risk from 13 patient health parameters. Random forest model with SMOTE for class imbalance, served through FastAPI, with Streamlit and Flask front ends.</p>
+      <div class="tags sans"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">FastAPI</span><span class="tag">Streamlit</span></div>
+      <div class="go sans"><a href="https://github.com/ade-mic/heart-disease-classifier">Source</a></div>
+    </article>
+
+    <article class="card">
+      <h3>FarmCollab</h3>
+      <p class="status sans">2024</p>
+      <p>Cooperative farming platform that connects farmers with buyers, supports shared equipment and pooled funding for farm projects, and helps manage food distribution.</p>
+      <div class="tags sans"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span></div>
+      <div class="go sans"><a href="https://github.com/ade-mic/farmCollab">Source</a></div>
+    </article>
+
+    <article class="card">
+      <h3>RAIMA 2027 Conference Website</h3>
+      <p class="status sans">Built, not launched</p>
+      <p>Website built for the 1st International Conference on Responsible AI and Multidisciplinary Applications. Static Next.js export with all conference content driven from one data file, so organisers can update it without touching code.</p>
+      <div class="tags sans"><span class="tag">Next.js</span><span class="tag">Tailwind CSS</span><span class="tag">Static export</span></div>
+    </article>
+
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2 class="sans">Skills</h2>
+  <div class="skills sans">
+    <div><h3>Research and data</h3><p>Hyperspectral imaging, thermal imaging, image processing, machine learning, finite element analysis, statistical analysis, Python, R, LabVIEW</p></div>
+    <div><h3>Web development</h3><p>TypeScript, JavaScript, React, Next.js, Node.js, Express, NestJS, Flask, FastAPI, WebSockets</p></div>
+    <div><h3>Data and infrastructure</h3><p>PostgreSQL, MongoDB, Firebase, Docker, Kubernetes, AWS, Microsoft Azure</p></div>
+  </div>
+  <h2 class="sans" style="margin-top:44px">Certifications</h2>
+  <ul class="certs sans">
+    <li>Kubernetes and Cloud Native Associate (KCNA) <span>&middot; The Linux Foundation, 2026</span></li>
+    <li>Future AWS Agent Engineer <span>&middot; Udacity, 2026</span></li>
+    <li>Software Engineering <span>&middot; ALX Africa, 2025</span></li>
+    <li>Supervised Machine Learning: Regression and Classification <span>&middot; Coursera, 2022</span></li>
+    <li>Advanced Learning Algorithms <span>&middot; Coursera, 2022</span></li>
+    <li>Google Data Analytics <span>&middot; Coursera, 2021</span></li>
+  </ul>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2 class="sans">Contact</h2>
+  <p>Open to research collaboration and to roles in AI and machine learning, data science and software engineering.</p>
+  <div class="links sans" style="margin-top:18px">
+    <a class="btn primary" href="https://www.linkedin.com/in/ademola-aina-m/">Message me on LinkedIn</a>
+    <a class="btn" href="https://github.com/ade-mic">GitHub</a>
+  </div>
+</div></section>
+
+<footer class="sans"><div class="wrap">Ademola Aina &middot; Malaysia</div></footer>
+
+</body>
+</html>
